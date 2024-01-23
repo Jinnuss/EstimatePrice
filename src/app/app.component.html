@@ -25,13 +25,13 @@
         <div class="form-group">
           <label for="">Tiền hàng ({{shortName}})</label>
           <input type="number" formControlName="price" class="form-control" placeholder="1.000"
-            (blur)="setValue('price')">
+            (blur)="setValue('price')" [class.err]="err">
           <div class="desc" [class.err]="err">Giá trị hàng hoá người dùng muốn mua</div>
         </div>
         <div class="form-group">
           <label for="">Trọng lượng (kg)</label>
           <input type="number" formControlName="weight" class="form-control" placeholder="1.2"
-            (blur)="setValue('weight')">
+            (blur)="setValue('weight')" [class.err]="err">
           <div class="desc" [class.err]="err">Cân nặng của hàng hoá người dùng muốn mua</div>
         </div>
       </div>
@@ -50,7 +50,7 @@
       <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
         <div class="form-group">
           <label for="select">Example select</label>
-          <select class="form-control" formControlName="selection" id="select">
+          <select class="form-control" formControlName="selection" id="select" [class.err]="err">
             <option>Nhóm hàng thường</option>
             <option>Nhóm Mỹ phẩm thuốc</option>
             <option>Nhóm hàng điện tử</option>
@@ -63,7 +63,7 @@
       </div>
       <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
         <div>
-          <button type="submit" class="btn" style="padding-top: 30px;">Ước tính giá cuối</button>
+          <button type="submit" class="btn" style="margin-top: 30px;">Ước tính giá cuối</button>
         </div>
       </div>
     </div>

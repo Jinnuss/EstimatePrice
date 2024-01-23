@@ -171,6 +171,10 @@ ul {
   color: #939393;
 }
 
+.form-control.err {
+  border: 1px solid red !important;
+}
+
 .err {
   color: red !important;
 }
