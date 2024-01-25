@@ -6,7 +6,7 @@
     Vui lòng nhập các thông tin liên quan đến mặt hàng bạn đang quan tâm. Chúng tôi sẽ giúp bạn ước lượng
     giá cuối cùng khi sản phẩm đến tay bạn
   </div>
-  <form action="" role="form" class="form" [formGroup]="priceForm" (submit)="EstimateResult()">
+  <form action="" role="form" class="form" [formGroup]="priceForm" (submit)="estimateResult()">
     <div class="form-group">
       <div class="item_country" [class.active]="country.active" (click)="activeCountry(country)"
         *ngFor="let country of listCountries">

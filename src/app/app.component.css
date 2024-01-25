@@ -175,8 +175,21 @@ ul {
   border: 1px solid red !important;
 }
 
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #f5a100;
+  outline: 0;
+  box-shadow: none;
+}
+
 .err {
   color: red !important;
+}
+
+.form-control.err:focus {
+  border: 1px solid #F5A100 !important;
+  color: #F5A100 !important;
 }
 
 .result {

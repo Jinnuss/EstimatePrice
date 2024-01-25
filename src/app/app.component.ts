@@ -65,7 +65,7 @@ export class AppComponent implements OnInit {
       control.setValue(0.1);
     }
   }
-  EstimateResult() {
+  estimateResult() {
     if (this.priceForm.valid == false) {
       this.err = true;
       this.show = false;
